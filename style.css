@@ -1,0 +1,55 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .sidebar {
+        display: grid;
+       
+        position: relative;
+        width: 30%;
+      }
+.image{
+    grid-row: 1 / 5;
+    grid-column: 1;
+    z-index: -1;
+    
+      
+}
+.logo{
+    background-color: rgba(43, 41, 41, 0.5);
+    /*background-color: black;*/
+    grid-column: 1;
+    grid-row: 2 / 3;
+    z-index: 1;
+    
+}
+.credit{
+    grid-column: 1;
+    grid-row: 4;
+    z-index: 1;
+    color: white;
+    
+}
+.content{
+    display: grid;
+       
+    position: relative;
+    width: 70%
+    
+}
+.quote{
+    grid-column: 2;
+    grid-row: 1/2;
+    font-size: 72px;
+}
+.signup{
+    grid-column: 2;
+    grid-row: 2/3
+}
+.confirm{
+    grid-column: 2;
+    grid-row: 3/4;
+}
